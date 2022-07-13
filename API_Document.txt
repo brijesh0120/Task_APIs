@@ -1,0 +1,4 @@
+APIs to manage different variants of the same product according to their color and Size.
+
+Get all products API : http://127.0.0.1:8000/products
+Filter according to their color and Size API : http://127.0.0.1:8000/products?color=green&size=8
