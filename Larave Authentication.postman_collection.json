@@ -1,0 +1,105 @@
+{
+	"id": "c7f55024-3a26-7b18-7f79-df21adaec620",
+	"name": "Larave Authentication",
+	"description": "Larave Authentication demo for Flowkl Post",
+	"order": [
+		"485c46e4-90f1-ff8f-43fe-d175d2222680",
+		"eddaa69e-ad1e-6ba9-1ca2-4032e85c363c",
+		"4a95b964-ef25-c310-ad04-31b1f831ae17",
+		"6e8e5225-4289-feee-bcc9-001690189b43"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 0,
+	"owner": "18065998",
+	"public": false,
+	"requests": [
+		{
+			"id": "485c46e4-90f1-ff8f-43fe-d175d2222680",
+			"name": "Send OTP API",
+			"description": "For sending an OTP to Mobile Number",
+			"collectionId": "c7f55024-3a26-7b18-7f79-df21adaec620",
+			"method": "POST",
+			"headers": "Accept: application/json",
+			"dataMode": "raw",
+			"data": [],
+			"rawModeData": "{\n    \"mobile_no\": \"8447027045\",\n    \"request_for\": \"login\"\n}",
+			"url": "http://127.0.0.1:8000/api/account/send-otp",
+			"responses": [],
+			"pathVariableData": [],
+			"queryParams": [],
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"type": "text"
+				}
+			],
+			"collection_id": "c7f55024-3a26-7b18-7f79-df21adaec620"
+		},
+		{
+			"id": "4a95b964-ef25-c310-ad04-31b1f831ae17",
+			"name": "Refresh Access Token",
+			"description": "For generating new Access Token",
+			"collectionId": "c7f55024-3a26-7b18-7f79-df21adaec620",
+			"method": "POST",
+			"helperAttributes": {},
+			"headers": "",
+			"data": [],
+			"rawModeData": "",
+			"url": "http://127.0.0.1:8000/api/account/refresh-token",
+			"responses": [],
+			"pathVariableData": [],
+			"queryParams": [],
+			"headerData": [],
+			"collection_id": "c7f55024-3a26-7b18-7f79-df21adaec620"
+		},
+		{
+			"id": "6e8e5225-4289-feee-bcc9-001690189b43",
+			"name": "Update User Information",
+			"description": "For updating user's information (Name and Photo)",
+			"collectionId": "c7f55024-3a26-7b18-7f79-df21adaec620",
+			"method": "POST",
+			"helperAttributes": {},
+			"headers": "",
+			"dataMode": "params",
+			"data": [
+				{
+					"key": "name",
+					"value": "Harish Kumar",
+					"type": "text"
+				},
+				{
+					"key": "photo",
+					"type": "file",
+					"src": "/home/harish/Pictures/Screenshot from 2020-10-30 12-06-18.png",
+					"value": ""
+				}
+			],
+			"rawModeData": "",
+			"url": "http://127.0.0.1:8000/api/account/update-user",
+			"responses": [],
+			"pathVariableData": [],
+			"queryParams": [],
+			"headerData": [],
+			"collection_id": "c7f55024-3a26-7b18-7f79-df21adaec620"
+		},
+		{
+			"id": "eddaa69e-ad1e-6ba9-1ca2-4032e85c363c",
+			"name": "Login / Register API",
+			"description": "For login existing user and for creating new User",
+			"collectionId": "c7f55024-3a26-7b18-7f79-df21adaec620",
+			"method": "POST",
+			"headers": "",
+			"dataMode": "raw",
+			"data": [],
+			"rawModeData": "{\n    \"mobile_no\": \"8447027045\",\n    \"otp\": \"5252\"\n}",
+			"url": "http://127.0.0.1:8000/api/account/login",
+			"responses": [],
+			"pathVariableData": [],
+			"queryParams": [],
+			"headerData": [],
+			"collection_id": "c7f55024-3a26-7b18-7f79-df21adaec620"
+		}
+	]
+}
